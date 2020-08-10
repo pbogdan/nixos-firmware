@@ -1,0 +1,41 @@
+{ stdenv
+, firmwareLinuxNonfree
+}:
+stdenv.mkDerivation {
+  pname = "linux-firmware-{{ driver.value.name }}";
+
+  inherit (firmwareLinuxNonfree)
+    version
+    src;
+
+  dontConfigure = true;
+
+  dontBuild = true;
+
+  installPhase = ''
+     runHook preInstall
+     mkdir -p $out/lib/firmware
+
+     {% for file in driver.value.files %}
+     install -Dm 644 {{ file.value }} $out/lib/firmware/{{ file.value }}
+     {% endfor %}
+
+     {% for link in driver.value.links %}
+     mkdir -p "$(dirname $out/lib/firmware/{{ link.value.linkName }})"
+     ln -sv {{ link.value.target }} $out/lib/firmware/{{ link.value.linkName }}
+     {% endfor %}
+
+     runHook postInstall
+  '';
+
+  dontFixup = true;
+
+  meta = with stdenv.lib; {
+    description = "Binary firmware Linux firmware for {{ driver.value.name }}";
+    homepage = "http://packages.debian.org/sid/firmware-linux-nonfree";
+    license = licenses.unfreeRedistributableFirmware;
+    platforms = platforms.linux;
+    maintainers = with maintainers; [ ];
+    priority = 6; # give precedence to kernel firmware
+  };
+}

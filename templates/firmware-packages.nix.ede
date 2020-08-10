@@ -1,0 +1,12 @@
+self: super:
+{
+  firmware = {
+    recurseForDerivations = true;
+
+    {% for driver in drivers %}
+      linux-firmware-{{ driver.value.name }} = self.callPackage (
+        {% include "./firmware-package.nix.ede" with driver = driver %}
+      ) {};
+    {% endfor %}
+  };
+}
