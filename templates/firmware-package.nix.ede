@@ -1,6 +1,7 @@
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "{{ firmware_version }}";
 stdenv.mkDerivation {
   pname = "linux-firmware-{{ driver.value.name }}";
 

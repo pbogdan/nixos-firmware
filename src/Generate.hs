@@ -23,7 +23,9 @@ generate whence ver = do
   let eContent = eitherRender
         pkgsTpl
         (HashMap.fromList
-          [("drivers", toJSON $ filter (isJust . Whence.name) drivers)]
+          [ ("drivers", toJSON $ filter (isJust . Whence.name) drivers)
+          , ("firmware_version", toJSON ver)
+          ]
         )
   case eContent of
     Right content -> do
