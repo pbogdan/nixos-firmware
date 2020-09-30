@@ -7,6 +7,7 @@ self: super:
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-3c359";
 
@@ -44,6 +45,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-3c574_cs";
 
@@ -81,6 +83,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-3c589_cs";
 
@@ -118,6 +121,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-BCM-0bb4";
 
@@ -157,6 +161,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-BFA";
 
@@ -202,6 +207,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-TI_ST";
 
@@ -241,6 +247,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-acenic";
 
@@ -279,6 +286,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-adreno";
 
@@ -331,6 +339,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-advansys";
 
@@ -371,6 +380,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ambassador";
 
@@ -408,6 +418,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-amdgpu";
 
@@ -781,6 +792,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ar5523";
 
@@ -818,6 +830,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ar9170";
 
@@ -856,6 +869,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-as102";
 
@@ -894,6 +908,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ath10k";
 
@@ -958,6 +973,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ath3k";
 
@@ -995,6 +1011,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ath6kl";
 
@@ -1072,6 +1089,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ath9k_htc";
 
@@ -1115,6 +1133,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-atusb";
 
@@ -1154,6 +1173,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-bnx2";
 
@@ -1214,6 +1234,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-bnx2x";
 
@@ -1304,6 +1325,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-brcmfmac";
 
@@ -1389,6 +1411,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-brcmsmac";
 
@@ -1427,6 +1450,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-btmtk";
 
@@ -1466,6 +1490,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-btmtk_usb";
 
@@ -1503,6 +1528,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-btqca";
 
@@ -1560,6 +1586,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-btusb";
 
@@ -1644,6 +1671,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-carl9170";
 
@@ -1681,6 +1709,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cassini";
 
@@ -1718,6 +1747,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ccp";
 
@@ -1755,6 +1785,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cdns-mhdp";
 
@@ -1792,6 +1823,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cpia2";
 
@@ -1829,6 +1861,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cw1200";
 
@@ -1867,6 +1900,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cx231xx";
 
@@ -1904,6 +1938,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cx23418";
 
@@ -1943,6 +1978,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cx23840";
 
@@ -1980,6 +2016,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cx23885";
 
@@ -2017,6 +2054,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cxgb3";
 
@@ -2063,6 +2101,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-cxgb4";
 
@@ -2125,6 +2164,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-dabusb";
 
@@ -2163,6 +2203,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-dib0700";
 
@@ -2200,6 +2241,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-drxk";
 
@@ -2237,6 +2279,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-dsp56k";
 
@@ -2274,6 +2317,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-dvb-ttpci";
 
@@ -2311,6 +2355,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-dvb-ttusb-budget";
 
@@ -2348,6 +2393,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-e100";
 
@@ -2387,6 +2433,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-emi26";
 
@@ -2426,6 +2473,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-emi62";
 
@@ -2466,6 +2514,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ene-ub6250";
 
@@ -2508,6 +2557,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-fsl";
 
@@ -2556,6 +2606,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-go7007";
 
@@ -2604,6 +2655,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-hfi1";
 
@@ -2644,6 +2696,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-i2400m-usb";
 
@@ -2683,6 +2736,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-i915";
 
@@ -2773,6 +2827,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ib_qib";
 
@@ -2810,6 +2865,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ice";
 
@@ -2849,6 +2905,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-imx-sdma";
 
@@ -2887,6 +2944,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-inside-secure";
 
@@ -2925,6 +2983,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-io_edgeport";
 
@@ -2965,6 +3024,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-io_ti";
 
@@ -3002,6 +3062,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ip2";
 
@@ -3039,6 +3100,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ipu3-imgu";
 
@@ -3078,6 +3140,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-isci";
 
@@ -3115,6 +3178,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-it9135";
 
@@ -3153,6 +3217,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-iwlwifi";
 
@@ -3300,6 +3365,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-kaweth";
 
@@ -3340,6 +3406,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-keyspan";
 
@@ -3388,6 +3455,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-keyspan_pda";
 
@@ -3426,6 +3494,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-knav_qmss_queue";
 
@@ -3463,6 +3532,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-lgs8gxx";
 
@@ -3500,6 +3570,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-libertas";
 
@@ -3566,6 +3637,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-liquidio";
 
@@ -3607,6 +3679,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-meson-vdec";
 
@@ -3658,6 +3731,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mga";
 
@@ -3696,6 +3770,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-microcode_amd";
 
@@ -3736,6 +3811,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mlxsw_spectrum";
 
@@ -3784,6 +3860,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mscc-phy";
 
@@ -3822,6 +3899,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt7601u";
 
@@ -3859,6 +3937,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt7615e";
 
@@ -3898,6 +3977,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt7622";
 
@@ -3936,6 +4016,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt7663";
 
@@ -3976,6 +4057,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt76x0";
 
@@ -4015,6 +4097,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt76x2e";
 
@@ -4053,6 +4136,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt76x2u";
 
@@ -4091,6 +4175,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mt7915e";
 
@@ -4130,6 +4215,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mtk-vpu";
 
@@ -4172,6 +4258,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mtk_scp";
 
@@ -4209,6 +4296,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mwifiex";
 
@@ -4261,6 +4349,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mwl8k";
 
@@ -4305,6 +4394,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mwlwifi";
 
@@ -4343,6 +4433,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mxu11x0";
 
@@ -4384,6 +4475,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-mxuport";
 
@@ -4429,6 +4521,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-myri10ge";
 
@@ -4473,6 +4566,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-myri_sbus";
 
@@ -4510,6 +4604,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-netxen_nic";
 
@@ -4547,6 +4642,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-nfp";
 
@@ -4699,6 +4795,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-nitrox";
 
@@ -4737,6 +4834,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-nouveau";
 
@@ -5118,6 +5216,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-orinoco";
 
@@ -5156,6 +5255,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-pcnet_cs";
 
@@ -5199,6 +5299,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qat";
 
@@ -5243,6 +5344,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qca";
 
@@ -5283,6 +5385,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qcom_q6v5_mss";
 
@@ -5322,6 +5425,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qcom_q6v5_pas";
 
@@ -5363,6 +5467,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qed";
 
@@ -5418,6 +5523,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qla1280";
 
@@ -5457,6 +5563,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qla2xxx";
 
@@ -5499,6 +5606,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-qlogicpti";
 
@@ -5536,6 +5644,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-r128";
 
@@ -5573,6 +5682,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-r8152";
 
@@ -5613,6 +5723,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-r8169";
 
@@ -5671,6 +5782,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-r8712u";
 
@@ -5708,6 +5820,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-r8723au";
 
@@ -5747,6 +5860,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-radeon";
 
@@ -6030,6 +6144,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rk3399-dptx";
 
@@ -6067,6 +6182,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rp2";
 
@@ -6104,6 +6220,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rsi";
 
@@ -6146,6 +6263,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt2800pci";
 
@@ -6184,6 +6302,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt2800usb";
 
@@ -6221,6 +6340,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt2860sta";
 
@@ -6259,6 +6379,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt2870sta";
 
@@ -6298,6 +6419,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt61pci";
 
@@ -6337,6 +6459,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rt73usb";
 
@@ -6374,6 +6497,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8188ee";
 
@@ -6411,6 +6535,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8188eu";
 
@@ -6448,6 +6573,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192ce";
 
@@ -6487,6 +6613,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192cu";
 
@@ -6527,6 +6654,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192de";
 
@@ -6564,6 +6692,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192e";
 
@@ -6603,6 +6732,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192ee";
 
@@ -6640,6 +6770,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8192se";
 
@@ -6677,6 +6808,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8723be";
 
@@ -6715,6 +6847,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8723bs";
 
@@ -6755,6 +6888,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8723de";
 
@@ -6792,6 +6926,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8723e";
 
@@ -6830,6 +6965,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8821ae";
 
@@ -6871,6 +7007,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8822be";
 
@@ -6908,6 +7045,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtl8xxxu";
 
@@ -6953,6 +7091,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-rtw88";
 
@@ -6995,6 +7134,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-s2255drv";
 
@@ -7032,6 +7172,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-s5p-mfc";
 
@@ -7073,6 +7214,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-serial_cs";
 
@@ -7116,6 +7258,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-slicoss";
 
@@ -7157,6 +7300,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-smc91c92_cs";
 
@@ -7194,6 +7338,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-smctr";
 
@@ -7231,6 +7376,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-smsmdtv";
 
@@ -7280,6 +7426,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-hda-codec-ca0132";
 
@@ -7318,6 +7465,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-korg1212";
 
@@ -7355,6 +7503,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-maestro3";
 
@@ -7393,6 +7542,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-sb16-csp";
 
@@ -7434,6 +7584,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-soc-skl";
 
@@ -7497,6 +7648,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-wavefront";
 
@@ -7534,6 +7686,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd-ymfpci";
 
@@ -7573,6 +7726,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd_intel_sst_core";
 
@@ -7612,6 +7766,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-snd_soc_sst_acpi";
 
@@ -7650,6 +7805,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-starfire";
 
@@ -7688,6 +7844,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-sxg";
 
@@ -7726,6 +7883,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-tda7706";
 
@@ -7764,6 +7922,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-tegra-vic";
 
@@ -7809,6 +7968,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-tehuti";
 
@@ -7846,6 +8006,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-tg3";
 
@@ -7886,6 +8047,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ti_usb_3410_5052";
 
@@ -7929,6 +8091,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-tlg2300";
 
@@ -7966,6 +8129,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-typhoon";
 
@@ -8003,6 +8167,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-ueagle-atm";
 
@@ -8063,6 +8228,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-usbdux";
 
@@ -8102,6 +8268,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-venus";
 
@@ -8164,6 +8331,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-vicam";
 
@@ -8201,6 +8369,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-vt6656";
 
@@ -8238,6 +8407,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-vxge";
 
@@ -8276,6 +8446,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-whiteheat";
 
@@ -8314,6 +8485,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-wil6210";
 
@@ -8352,6 +8524,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-wilc1000";
 
@@ -8392,6 +8565,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-wl1251";
 
@@ -8430,6 +8604,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-wl12xx";
 
@@ -8493,6 +8668,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-wl18xx";
 
@@ -8533,6 +8709,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-xc4000";
 
@@ -8570,6 +8747,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-xc5000";
 
@@ -8608,6 +8786,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-xhci-rcar";
 
@@ -8647,6 +8826,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-xhci-tegra";
 
@@ -8687,6 +8867,7 @@ stdenv.mkDerivation {
 { stdenv
 , firmwareLinuxNonfree
 }:
+assert firmwareLinuxNonfree.version == "2020-05-19";
 stdenv.mkDerivation {
   pname = "linux-firmware-yam";
 
