@@ -19,7 +19,7 @@ library
                      , Generate
   -- other-modules:
   -- other-extensions:
-  build-depends:       base ^>=4.13.0.0
+  build-depends:       base
                      , aeson
                      , directory
                      , ede
@@ -36,7 +36,7 @@ executable nixos-firmware
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base ^>=4.13.0.0
+  build-depends:       base
                      , nixos-firmware
                      , protolude
   hs-source-dirs:      app
