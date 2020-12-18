@@ -139,6 +139,8 @@ stdenv.mkDerivation {
 
      install -Dm 644 brcm/BCM-0bb4-0306.hcd $out/lib/firmware/brcm/BCM-0bb4-0306.hcd
 
+     mkdir -p "$(dirname $out/lib/firmware/brcm/BCM-0a5c-6410.hcd)"
+     ln -sv BCM-0bb4-0306.hcd $out/lib/firmware/brcm/BCM-0a5c-6410.hcd
 
      runHook postInstall
   '';
@@ -313,6 +315,10 @@ stdenv.mkDerivation {
      install -Dm 644 qcom/a300_pm4.fw $out/lib/firmware/qcom/a300_pm4.fw
      install -Dm 644 qcom/a300_pfp.fw $out/lib/firmware/qcom/a300_pfp.fw
 
+     mkdir -p "$(dirname $out/lib/firmware/a300_pm4.fw)"
+     ln -sv qcom/a300_pm4.fw $out/lib/firmware/a300_pm4.fw
+     mkdir -p "$(dirname $out/lib/firmware/a300_pfp.fw)"
+     ln -sv qcom/a300_pfp.fw $out/lib/firmware/a300_pfp.fw
 
      runHook postInstall
   '';
@@ -968,6 +974,8 @@ stdenv.mkDerivation {
      install -Dm 644 ath10k/QCA988X/hw2.0/firmware-4.bin $out/lib/firmware/ath10k/QCA988X/hw2.0/firmware-4.bin
      install -Dm 644 ath10k/QCA988X/hw2.0/board.bin $out/lib/firmware/ath10k/QCA988X/hw2.0/board.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/qcom/sdm845/wlanmdsp.mbn)"
+     ln -sv ../../ath10k/WCN3990/hw1.0/wlanmdsp.mbn $out/lib/firmware/qcom/sdm845/wlanmdsp.mbn
 
      runHook postInstall
   '';
@@ -1428,20 +1436,20 @@ stdenv.mkDerivation {
      runHook preInstall
      mkdir -p $out/lib/firmware
 
-     install -Dm 644 &quot;brcm/brcmfmac4356-pcie.gpd-win-pocket.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac4356-pcie.gpd-win-pocket.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430-sdio.MUR1DX.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430-sdio.MUR1DX.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430-sdio.AP6212.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430-sdio.AP6212.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac43340-sdio.meegopad-t08.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac43340-sdio.meegopad-t08.txt&quot;
-     install -Dm 644 &quot;brcm/brcmfmac4330-sdio.Prowise-PT301.txt&quot; $out/lib/firmware/&quot;brcm/brcmfmac4330-sdio.Prowise-PT301.txt&quot;
+     install -Dm 644 "brcm/brcmfmac4356-pcie.gpd-win-pocket.txt" $out/lib/firmware/"brcm/brcmfmac4356-pcie.gpd-win-pocket.txt"
+     install -Dm 644 "brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt" $out/lib/firmware/"brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt"
+     install -Dm 644 "brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt" $out/lib/firmware/"brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt"
+     install -Dm 644 "brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt" $out/lib/firmware/"brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt"
+     install -Dm 644 "brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt" $out/lib/firmware/"brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt"
+     install -Dm 644 "brcm/brcmfmac43430-sdio.MUR1DX.txt" $out/lib/firmware/"brcm/brcmfmac43430-sdio.MUR1DX.txt"
+     install -Dm 644 "brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt" $out/lib/firmware/"brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt"
+     install -Dm 644 "brcm/brcmfmac43430-sdio.AP6212.txt" $out/lib/firmware/"brcm/brcmfmac43430-sdio.AP6212.txt"
+     install -Dm 644 "brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt" $out/lib/firmware/"brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt"
+     install -Dm 644 "brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt" $out/lib/firmware/"brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt"
+     install -Dm 644 "brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt" $out/lib/firmware/"brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt"
+     install -Dm 644 "brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt" $out/lib/firmware/"brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt"
+     install -Dm 644 "brcm/brcmfmac43340-sdio.meegopad-t08.txt" $out/lib/firmware/"brcm/brcmfmac43340-sdio.meegopad-t08.txt"
+     install -Dm 644 "brcm/brcmfmac4330-sdio.Prowise-PT301.txt" $out/lib/firmware/"brcm/brcmfmac4330-sdio.Prowise-PT301.txt"
      install -Dm 644 cypress/cyfmac54591-pcie.clm_blob $out/lib/firmware/cypress/cyfmac54591-pcie.clm_blob
      install -Dm 644 cypress/cyfmac54591-pcie.bin $out/lib/firmware/cypress/cyfmac54591-pcie.bin
      install -Dm 644 cypress/cyfmac4373-sdio.clm_blob $out/lib/firmware/cypress/cyfmac4373-sdio.clm_blob
@@ -1497,6 +1505,10 @@ stdenv.mkDerivation {
      install -Dm 644 brcm/brcmfmac43236b.bin $out/lib/firmware/brcm/brcmfmac43236b.bin
      install -Dm 644 brcm/bcm4329-fullmac-4.bin $out/lib/firmware/brcm/bcm4329-fullmac-4.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt)"
+     ln -sv brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt $out/lib/firmware/brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
+     mkdir -p "$(dirname $out/lib/firmware/brcm/brcmfmac43362-sdio.lemaker,bananapro.txt)"
+     ln -sv brcmfmac43362-sdio.cubietech,cubietruck.txt $out/lib/firmware/brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
 
      runHook postInstall
   '';
@@ -2239,6 +2251,18 @@ stdenv.mkDerivation {
      install -Dm 644 cxgb4/t4fw-1.15.37.0.bin $out/lib/firmware/cxgb4/t4fw-1.15.37.0.bin
      install -Dm 644 cxgb4/t4fw-1.14.4.0.bin $out/lib/firmware/cxgb4/t4fw-1.14.4.0.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t6-config.txt)"
+     ln -sv configs/t6-config-default.txt $out/lib/firmware/cxgb4/t6-config.txt
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t5-config.txt)"
+     ln -sv configs/t5-config-default.txt $out/lib/firmware/cxgb4/t5-config.txt
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t4-config.txt)"
+     ln -sv configs/t4-config-default.txt $out/lib/firmware/cxgb4/t4-config.txt
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t6fw.bin)"
+     ln -sv t6fw-1.24.17.0.bin $out/lib/firmware/cxgb4/t6fw.bin
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t5fw.bin)"
+     ln -sv t5fw-1.24.17.0.bin $out/lib/firmware/cxgb4/t5fw.bin
+     mkdir -p "$(dirname $out/lib/firmware/cxgb4/t4fw.bin)"
+     ln -sv t4fw-1.24.17.0.bin $out/lib/firmware/cxgb4/t4fw.bin
 
      runHook postInstall
   '';
@@ -2726,6 +2750,10 @@ stdenv.mkDerivation {
      install -Dm 644 go7007/s2250-2.fw $out/lib/firmware/go7007/s2250-2.fw
      install -Dm 644 go7007/s2250-1.fw $out/lib/firmware/go7007/s2250-1.fw
 
+     mkdir -p "$(dirname $out/lib/firmware/s2250_loader.fw)"
+     ln -sv go7007/s2250-1.fw $out/lib/firmware/s2250_loader.fw
+     mkdir -p "$(dirname $out/lib/firmware/s2250.fw)"
+     ln -sv go7007/s2250-2.fw $out/lib/firmware/s2250.fw
 
      runHook postInstall
   '';
@@ -2898,6 +2926,14 @@ stdenv.mkDerivation {
      install -Dm 644 i915/skl_dmc_ver1_26.bin $out/lib/firmware/i915/skl_dmc_ver1_26.bin
      install -Dm 644 i915/skl_dmc_ver1_23.bin $out/lib/firmware/i915/skl_dmc_ver1_23.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/i915/skl_guc_ver6.bin)"
+     ln -sv skl_guc_ver6_1.bin $out/lib/firmware/i915/skl_guc_ver6.bin
+     mkdir -p "$(dirname $out/lib/firmware/i915/kbl_dmc_ver1.bin)"
+     ln -sv kbl_dmc_ver1_01.bin $out/lib/firmware/i915/kbl_dmc_ver1.bin
+     mkdir -p "$(dirname $out/lib/firmware/i915/bxt_dmc_ver1.bin)"
+     ln -sv bxt_dmc_ver1_07.bin $out/lib/firmware/i915/bxt_dmc_ver1.bin
+     mkdir -p "$(dirname $out/lib/firmware/i915/skl_dmc_ver1.bin)"
+     ln -sv skl_dmc_ver1_26.bin $out/lib/firmware/i915/skl_dmc_ver1.bin
 
      runHook postInstall
   '';
@@ -2975,6 +3011,8 @@ stdenv.mkDerivation {
      install -Dm 644 intel/ice/ddp-comms/ice_comms-1.3.20.0.pkg $out/lib/firmware/intel/ice/ddp-comms/ice_comms-1.3.20.0.pkg
      install -Dm 644 intel/ice/ddp/ice-1.3.16.0.pkg $out/lib/firmware/intel/ice/ddp/ice-1.3.16.0.pkg
 
+     mkdir -p "$(dirname $out/lib/firmware/intel/ice/ddp/ice.pkg)"
+     ln -sv ice-1.3.16.0.pkg $out/lib/firmware/intel/ice/ddp/ice.pkg
 
      runHook postInstall
   '';
@@ -3208,6 +3246,8 @@ stdenv.mkDerivation {
 
      install -Dm 644 intel/irci_irci_ecr-master_20161208_0213_20170112_1500.bin $out/lib/firmware/intel/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/intel/ipu3-fw.bin)"
+     ln -sv irci_irci_ecr-master_20161208_0213_20170112_1500.bin $out/lib/firmware/intel/ipu3-fw.bin
 
      runHook postInstall
   '';
@@ -3440,6 +3480,8 @@ stdenv.mkDerivation {
      install -Dm 644 iwlwifi-4965-2.ucode $out/lib/firmware/iwlwifi-4965-2.ucode
      install -Dm 644 iwlwifi-3945-2.ucode $out/lib/firmware/iwlwifi-3945-2.ucode
 
+     mkdir -p "$(dirname $out/lib/firmware/iwlwifi-7265D-10.ucode)"
+     ln -sv iwlwifi-7265-10.ucode $out/lib/firmware/iwlwifi-7265D-10.ucode
 
      runHook postInstall
   '';
@@ -3708,6 +3750,10 @@ stdenv.mkDerivation {
      install -Dm 644 libertas/cf8381_helper.bin $out/lib/firmware/libertas/cf8381_helper.bin
      install -Dm 644 libertas/cf8381.bin $out/lib/firmware/libertas/cf8381.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/libertas/sd8688_helper.bin)"
+     ln -sv ../mrvl/sd8688_helper.bin $out/lib/firmware/libertas/sd8688_helper.bin
+     mkdir -p "$(dirname $out/lib/firmware/libertas/sd8688.bin)"
+     ln -sv ../mrvl/sd8688.bin $out/lib/firmware/libertas/sd8688.bin
 
      runHook postInstall
   '';
@@ -4337,6 +4383,10 @@ stdenv.mkDerivation {
      install -Dm 644 mediatek/mt8173/vpu_p.bin $out/lib/firmware/mediatek/mt8173/vpu_p.bin
      install -Dm 644 mediatek/mt8173/vpu_d.bin $out/lib/firmware/mediatek/mt8173/vpu_d.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/vpu_p.bin)"
+     ln -sv mediatek/mt8173/vpu_p.bin $out/lib/firmware/vpu_p.bin
+     mkdir -p "$(dirname $out/lib/firmware/vpu_d.bin)"
+     ln -sv mediatek/mt8173/vpu_d.bin $out/lib/firmware/vpu_d.bin
 
      runHook postInstall
   '';
@@ -4798,6 +4848,82 @@ stdenv.mkDerivation {
      install -Dm 644 netronome/nic/nic_AMDA0097-0001_2x40.nffw $out/lib/firmware/netronome/nic/nic_AMDA0097-0001_2x40.nffw
      install -Dm 644 netronome/nic/nic_AMDA0081-0001_1x40.nffw $out/lib/firmware/netronome/nic/nic_AMDA0081-0001_1x40.nffw
 
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_8x10.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_4x10_1x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_2x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_1x100.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0012_1x100.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_8x10.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_4x10_1x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_2x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_1x100.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0078-0011_1x100.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_8x10.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_4x10_1x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_2x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_1x100.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0012_1x100.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_8x10.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_4x10_1x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_2x40.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_1x100.nffw)"
+     ln -sv nic_AMDA0058.nffw $out/lib/firmware/netronome/flower/nic_AMDA0058-0011_1x100.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_1x10_1x25.nffw)"
+     ln -sv nic_AMDA0099.nffw $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_1x10_1x25.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_8x10.nffw)"
+     ln -sv nic_AMDA0097.nffw $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0096-0001_2x10.nffw)"
+     ln -sv nic_AMDA0096.nffw $out/lib/firmware/netronome/flower/nic_AMDA0096-0001_2x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_2x25.nffw)"
+     ln -sv nic_AMDA0099.nffw $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_2x25.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_4x10_1x40.nffw)"
+     ln -sv nic_AMDA0097.nffw $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0081-0001_4x10.nffw)"
+     ln -sv nic_AMDA0081.nffw $out/lib/firmware/netronome/flower/nic_AMDA0081-0001_4x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_2x10.nffw)"
+     ln -sv nic_AMDA0099.nffw $out/lib/firmware/netronome/flower/nic_AMDA0099-0001_2x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_2x40.nffw)"
+     ln -sv nic_AMDA0097.nffw $out/lib/firmware/netronome/flower/nic_AMDA0097-0001_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0081-0001_1x40.nffw)"
+     ln -sv nic_AMDA0081.nffw $out/lib/firmware/netronome/flower/nic_AMDA0081-0001_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/flower/nic_AMDA0081.nffw)"
+     ln -sv nic_AMDA0097.nffw $out/lib/firmware/netronome/flower/nic_AMDA0081.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0078-0011_1x100.nffw)"
+     ln -sv nic/nic_AMDA0078-0011_1x100.nffw $out/lib/firmware/netronome/nic_AMDA0078-0011_1x100.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0058-0012_2x40.nffw)"
+     ln -sv nic/nic_AMDA0058-0012_2x40.nffw $out/lib/firmware/netronome/nic_AMDA0058-0012_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0058-0011_2x40.nffw)"
+     ln -sv nic/nic_AMDA0058-0011_2x40.nffw $out/lib/firmware/netronome/nic_AMDA0058-0011_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0097-0001_8x10.nffw)"
+     ln -sv nic/nic_AMDA0097-0001_8x10.nffw $out/lib/firmware/netronome/nic_AMDA0097-0001_8x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0096-0001_2x10.nffw)"
+     ln -sv nic/nic_AMDA0096-0001_2x10.nffw $out/lib/firmware/netronome/nic_AMDA0096-0001_2x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0099-0001_2x25.nffw)"
+     ln -sv nic/nic_AMDA0099-0001_2x25.nffw $out/lib/firmware/netronome/nic_AMDA0099-0001_2x25.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0099-0001_1x10_1x25.nffw)"
+     ln -sv nic/nic_AMDA0099-0001_1x10_1x25.nffw $out/lib/firmware/netronome/nic_AMDA0099-0001_1x10_1x25.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0097-0001_4x10_1x40.nffw)"
+     ln -sv nic/nic_AMDA0097-0001_4x10_1x40.nffw $out/lib/firmware/netronome/nic_AMDA0097-0001_4x10_1x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0081-0001_4x10.nffw)"
+     ln -sv nic/nic_AMDA0081-0001_4x10.nffw $out/lib/firmware/netronome/nic_AMDA0081-0001_4x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0099-0001_2x10.nffw)"
+     ln -sv nic/nic_AMDA0099-0001_2x10.nffw $out/lib/firmware/netronome/nic_AMDA0099-0001_2x10.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0097-0001_2x40.nffw)"
+     ln -sv nic/nic_AMDA0097-0001_2x40.nffw $out/lib/firmware/netronome/nic_AMDA0097-0001_2x40.nffw
+     mkdir -p "$(dirname $out/lib/firmware/netronome/nic_AMDA0081-0001_1x40.nffw)"
+     ln -sv nic/nic_AMDA0081-0001_1x40.nffw $out/lib/firmware/netronome/nic_AMDA0081-0001_1x40.nffw
 
      runHook postInstall
   '';
@@ -5104,6 +5230,236 @@ stdenv.mkDerivation {
      install -Dm 644 nvidia/gk20a/fecs_inst.bin $out/lib/firmware/nvidia/gk20a/fecs_inst.bin
      install -Dm 644 nvidia/gk20a/fecs_data.bin $out/lib/firmware/nvidia/gk20a/fecs_data.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/sec2/sig.bin)"
+     ln -sv ../../tu116/sec2/sig.bin $out/lib/firmware/nvidia/tu117/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/sec2/image.bin)"
+     ln -sv ../../tu116/sec2/image.bin $out/lib/firmware/nvidia/tu117/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/sec2/desc.bin)"
+     ln -sv ../../tu116/sec2/desc.bin $out/lib/firmware/nvidia/tu117/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/nvdec/scrubber.bin)"
+     ln -sv ../../tu116/nvdec/scrubber.bin $out/lib/firmware/nvidia/tu117/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/gr/gpccs_bl.bin)"
+     ln -sv ../../tu116/gr/gpccs_bl.bin $out/lib/firmware/nvidia/tu117/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/gr/fecs_bl.bin)"
+     ln -sv ../../tu116/gr/fecs_bl.bin $out/lib/firmware/nvidia/tu117/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/acr/unload_bl.bin)"
+     ln -sv ../../tu116/acr/unload_bl.bin $out/lib/firmware/nvidia/tu117/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/acr/ucode_unload.bin)"
+     ln -sv ../../tu116/acr/ucode_unload.bin $out/lib/firmware/nvidia/tu117/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/acr/ucode_asb.bin)"
+     ln -sv ../../tu116/acr/ucode_asb.bin $out/lib/firmware/nvidia/tu117/acr/ucode_asb.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/acr/ucode_ahesasc.bin)"
+     ln -sv ../../tu116/acr/ucode_ahesasc.bin $out/lib/firmware/nvidia/tu117/acr/ucode_ahesasc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu117/acr/bl.bin)"
+     ln -sv ../../tu116/acr/bl.bin $out/lib/firmware/nvidia/tu117/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/sec2/sig.bin)"
+     ln -sv ../../tu102/sec2/sig.bin $out/lib/firmware/nvidia/tu106/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/sec2/image.bin)"
+     ln -sv ../../tu102/sec2/image.bin $out/lib/firmware/nvidia/tu106/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/sec2/desc.bin)"
+     ln -sv ../../tu102/sec2/desc.bin $out/lib/firmware/nvidia/tu106/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/nvdec/scrubber.bin)"
+     ln -sv ../../tu102/nvdec/scrubber.bin $out/lib/firmware/nvidia/tu106/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/gr/gpccs_bl.bin)"
+     ln -sv ../../tu102/gr/gpccs_bl.bin $out/lib/firmware/nvidia/tu106/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/gr/fecs_bl.bin)"
+     ln -sv ../../tu102/gr/fecs_bl.bin $out/lib/firmware/nvidia/tu106/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/acr/ucode_unload.bin)"
+     ln -sv ../../tu102/acr/unload_bl.bin $out/lib/firmware/nvidia/tu106/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/acr/unload_bl.bin)"
+     ln -sv ../../tu102/acr/ucode_unload.bin $out/lib/firmware/nvidia/tu106/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/acr/ucode_asb.bin)"
+     ln -sv ../../tu102/acr/ucode_asb.bin $out/lib/firmware/nvidia/tu106/acr/ucode_asb.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/acr/ucode_ahesasc.bin)"
+     ln -sv ../../tu102/acr/ucode_ahesasc.bin $out/lib/firmware/nvidia/tu106/acr/ucode_ahesasc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu106/acr/bl.bin)"
+     ln -sv ../../tu102/acr/bl.bin $out/lib/firmware/nvidia/tu106/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/sec2/sig.bin)"
+     ln -sv ../../tu102/sec2/sig.bin $out/lib/firmware/nvidia/tu104/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/sec2/image.bin)"
+     ln -sv ../../tu102/sec2/image.bin $out/lib/firmware/nvidia/tu104/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/sec2/desc.bin)"
+     ln -sv ../../tu102/sec2/desc.bin $out/lib/firmware/nvidia/tu104/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/nvdec/scrubber.bin)"
+     ln -sv ../../tu102/nvdec/scrubber.bin $out/lib/firmware/nvidia/tu104/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/gr/gpccs_bl.bin)"
+     ln -sv ../../tu102/gr/gpccs_bl.bin $out/lib/firmware/nvidia/tu104/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/gr/fecs_bl.bin)"
+     ln -sv ../../tu102/gr/fecs_bl.bin $out/lib/firmware/nvidia/tu104/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/acr/ucode_unload.bin)"
+     ln -sv ../../tu102/acr/unload_bl.bin $out/lib/firmware/nvidia/tu104/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/acr/unload_bl.bin)"
+     ln -sv ../../tu102/acr/ucode_unload.bin $out/lib/firmware/nvidia/tu104/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/acr/ucode_asb.bin)"
+     ln -sv ../../tu102/acr/ucode_asb.bin $out/lib/firmware/nvidia/tu104/acr/ucode_asb.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/acr/ucode_ahesasc.bin)"
+     ln -sv ../../tu102/acr/ucode_ahesasc.bin $out/lib/firmware/nvidia/tu104/acr/ucode_ahesasc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tu104/acr/bl.bin)"
+     ln -sv ../../tu102/acr/bl.bin $out/lib/firmware/nvidia/tu104/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/sec2/sig.bin)"
+     ln -sv ../../gp102/sec2/sig-1.bin $out/lib/firmware/nvidia/gp108/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/sec2/image.bin)"
+     ln -sv ../../gp102/sec2/image-1.bin $out/lib/firmware/nvidia/gp108/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/sec2/desc.bin)"
+     ln -sv ../../gp102/sec2/desc-1.bin $out/lib/firmware/nvidia/gp108/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/nvdec/scrubber.bin)"
+     ln -sv ../../gp102/nvdec/scrubber.bin $out/lib/firmware/nvidia/gp108/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/acr/unload_bl.bin)"
+     ln -sv ../../gp102/acr/unload_bl.bin $out/lib/firmware/nvidia/gp108/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/acr/ucode_unload.bin)"
+     ln -sv ../../gp102/acr/ucode_unload.bin $out/lib/firmware/nvidia/gp108/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/acr/ucode_load.bin)"
+     ln -sv ../../gp102/acr/ucode_load.bin $out/lib/firmware/nvidia/gp108/acr/ucode_load.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp108/acr/bl.bin)"
+     ln -sv ../../gp102/acr/bl.bin $out/lib/firmware/nvidia/gp108/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/sig-1.bin)"
+     ln -sv ../../gp102/sec2/sig-1.bin $out/lib/firmware/nvidia/gp107/sec2/sig-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/image-1.bin)"
+     ln -sv ../../gp102/sec2/image-1.bin $out/lib/firmware/nvidia/gp107/sec2/image-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/desc-1.bin)"
+     ln -sv ../../gp102/sec2/desc-1.bin $out/lib/firmware/nvidia/gp107/sec2/desc-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/sig.bin)"
+     ln -sv ../../gp102/sec2/sig.bin $out/lib/firmware/nvidia/gp107/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/image.bin)"
+     ln -sv ../../gp102/sec2/image.bin $out/lib/firmware/nvidia/gp107/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/sec2/desc.bin)"
+     ln -sv ../../gp102/sec2/desc.bin $out/lib/firmware/nvidia/gp107/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/nvdec/scrubber.bin)"
+     ln -sv ../../gp102/nvdec/scrubber.bin $out/lib/firmware/nvidia/gp107/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/gr/sw_method_init.bin)"
+     ln -sv ../../gp102/gr/sw_method_init.bin $out/lib/firmware/nvidia/gp107/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/gr/sw_bundle_init.bin)"
+     ln -sv ../../gp102/gr/sw_bundle_init.bin $out/lib/firmware/nvidia/gp107/gr/sw_bundle_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/acr/unload_bl.bin)"
+     ln -sv ../../gp102/acr/unload_bl.bin $out/lib/firmware/nvidia/gp107/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/acr/ucode_unload.bin)"
+     ln -sv ../../gp102/acr/ucode_unload.bin $out/lib/firmware/nvidia/gp107/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/acr/ucode_load.bin)"
+     ln -sv ../../gp102/acr/ucode_load.bin $out/lib/firmware/nvidia/gp107/acr/ucode_load.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp107/acr/bl.bin)"
+     ln -sv ../../gp102/acr/bl.bin $out/lib/firmware/nvidia/gp107/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/sig-1.bin)"
+     ln -sv ../../gp102/sec2/sig-1.bin $out/lib/firmware/nvidia/gp106/sec2/sig-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/image-1.bin)"
+     ln -sv ../../gp102/sec2/image-1.bin $out/lib/firmware/nvidia/gp106/sec2/image-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/desc-1.bin)"
+     ln -sv ../../gp102/sec2/desc-1.bin $out/lib/firmware/nvidia/gp106/sec2/desc-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/sig.bin)"
+     ln -sv ../../gp102/sec2/sig.bin $out/lib/firmware/nvidia/gp106/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/image.bin)"
+     ln -sv ../../gp102/sec2/image.bin $out/lib/firmware/nvidia/gp106/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/sec2/desc.bin)"
+     ln -sv ../../gp102/sec2/desc.bin $out/lib/firmware/nvidia/gp106/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/nvdec/scrubber.bin)"
+     ln -sv ../../gp102/nvdec/scrubber.bin $out/lib/firmware/nvidia/gp106/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/sw_nonctx.bin)"
+     ln -sv ../../gp102/gr/sw_nonctx.bin $out/lib/firmware/nvidia/gp106/gr/sw_nonctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/sw_method_init.bin)"
+     ln -sv ../../gp102/gr/sw_method_init.bin $out/lib/firmware/nvidia/gp106/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/sw_ctx.bin)"
+     ln -sv ../../gp102/gr/sw_ctx.bin $out/lib/firmware/nvidia/gp106/gr/sw_ctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/sw_bundle_init.bin)"
+     ln -sv ../../gp102/gr/sw_bundle_init.bin $out/lib/firmware/nvidia/gp106/gr/sw_bundle_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/gpccs_inst.bin)"
+     ln -sv ../../gp102/gr/gpccs_inst.bin $out/lib/firmware/nvidia/gp106/gr/gpccs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/gpccs_bl.bin)"
+     ln -sv ../../gp102/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gp106/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/fecs_inst.bin)"
+     ln -sv ../../gp102/gr/fecs_inst.bin $out/lib/firmware/nvidia/gp106/gr/fecs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/gr/fecs_bl.bin)"
+     ln -sv ../../gp102/gr/fecs_bl.bin $out/lib/firmware/nvidia/gp106/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/acr/unload_bl.bin)"
+     ln -sv ../../gp102/acr/unload_bl.bin $out/lib/firmware/nvidia/gp106/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/acr/ucode_unload.bin)"
+     ln -sv ../../gp102/acr/ucode_unload.bin $out/lib/firmware/nvidia/gp106/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/acr/ucode_load.bin)"
+     ln -sv ../../gp102/acr/ucode_load.bin $out/lib/firmware/nvidia/gp106/acr/ucode_load.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp106/acr/bl.bin)"
+     ln -sv ../../gp102/acr/bl.bin $out/lib/firmware/nvidia/gp106/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/sig-1.bin)"
+     ln -sv ../../gp102/sec2/sig-1.bin $out/lib/firmware/nvidia/gp104/sec2/sig-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/image-1.bin)"
+     ln -sv ../../gp102/sec2/image-1.bin $out/lib/firmware/nvidia/gp104/sec2/image-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/desc-1.bin)"
+     ln -sv ../../gp102/sec2/desc-1.bin $out/lib/firmware/nvidia/gp104/sec2/desc-1.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/sig.bin)"
+     ln -sv ../../gp102/sec2/sig.bin $out/lib/firmware/nvidia/gp104/sec2/sig.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/image.bin)"
+     ln -sv ../../gp102/sec2/image.bin $out/lib/firmware/nvidia/gp104/sec2/image.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/sec2/desc.bin)"
+     ln -sv ../../gp102/sec2/desc.bin $out/lib/firmware/nvidia/gp104/sec2/desc.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/nvdec/scrubber.bin)"
+     ln -sv ../../gp102/nvdec/scrubber.bin $out/lib/firmware/nvidia/gp104/nvdec/scrubber.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/sw_nonctx.bin)"
+     ln -sv ../../gp102/gr/sw_nonctx.bin $out/lib/firmware/nvidia/gp104/gr/sw_nonctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/sw_method_init.bin)"
+     ln -sv ../../gp102/gr/sw_method_init.bin $out/lib/firmware/nvidia/gp104/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/sw_ctx.bin)"
+     ln -sv ../../gp102/gr/sw_ctx.bin $out/lib/firmware/nvidia/gp104/gr/sw_ctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/sw_bundle_init.bin)"
+     ln -sv ../../gp102/gr/sw_bundle_init.bin $out/lib/firmware/nvidia/gp104/gr/sw_bundle_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/gpccs_bl.bin)"
+     ln -sv ../../gp102/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gp104/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/gr/fecs_bl.bin)"
+     ln -sv ../../gp102/gr/fecs_bl.bin $out/lib/firmware/nvidia/gp104/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/acr/unload_bl.bin)"
+     ln -sv ../../gp102/acr/unload_bl.bin $out/lib/firmware/nvidia/gp104/acr/unload_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/acr/ucode_unload.bin)"
+     ln -sv ../../gp102/acr/ucode_unload.bin $out/lib/firmware/nvidia/gp104/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/acr/ucode_load.bin)"
+     ln -sv ../../gp102/acr/ucode_load.bin $out/lib/firmware/nvidia/gp104/acr/ucode_load.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp104/acr/bl.bin)"
+     ln -sv ../../gp102/acr/bl.bin $out/lib/firmware/nvidia/gp104/acr/bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp102/gr/gpccs_bl.bin)"
+     ln -sv ../../gm200/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gp102/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp102/gr/fecs_bl.bin)"
+     ln -sv ../../gm200/gr/fecs_bl.bin $out/lib/firmware/nvidia/gp102/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp100/gr/gpccs_bl.bin)"
+     ln -sv ../../gm200/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gp100/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gp100/gr/fecs_bl.bin)"
+     ln -sv ../../gm200/gr/fecs_bl.bin $out/lib/firmware/nvidia/gp100/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm20b/gr/sw_method_init.bin)"
+     ln -sv ../../gm200/gr/sw_method_init.bin $out/lib/firmware/nvidia/gm20b/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/sw_nonctx.bin)"
+     ln -sv ../../gm200/gr/sw_nonctx.bin $out/lib/firmware/nvidia/gm206/gr/sw_nonctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/sw_method_init.bin)"
+     ln -sv ../../gm200/gr/sw_method_init.bin $out/lib/firmware/nvidia/gm206/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/sw_ctx.bin)"
+     ln -sv ../../gm200/gr/sw_ctx.bin $out/lib/firmware/nvidia/gm206/gr/sw_ctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/sw_bundle_init.bin)"
+     ln -sv ../../gm200/gr/sw_bundle_init.bin $out/lib/firmware/nvidia/gm206/gr/sw_bundle_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/gpccs_inst.bin)"
+     ln -sv ../../gm200/gr/gpccs_inst.bin $out/lib/firmware/nvidia/gm206/gr/gpccs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/gpccs_bl.bin)"
+     ln -sv ../../gm200/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gm206/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/fecs_inst.bin)"
+     ln -sv ../../gm200/gr/fecs_inst.bin $out/lib/firmware/nvidia/gm206/gr/fecs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/gr/fecs_bl.bin)"
+     ln -sv ../../gm200/gr/fecs_bl.bin $out/lib/firmware/nvidia/gm206/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm206/acr/bl.bin )"
+     ln -sv ../../gm200/acr/bl.bin $out/lib/firmware/nvidia/gm206/acr/bl.bin 
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/sw_nonctx.bin)"
+     ln -sv ../../gm200/gr/sw_nonctx.bin $out/lib/firmware/nvidia/gm204/gr/sw_nonctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/sw_method_init.bin)"
+     ln -sv ../../gm200/gr/sw_method_init.bin $out/lib/firmware/nvidia/gm204/gr/sw_method_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/sw_ctx.bin)"
+     ln -sv ../../gm200/gr/sw_ctx.bin $out/lib/firmware/nvidia/gm204/gr/sw_ctx.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/sw_bundle_init.bin)"
+     ln -sv ../../gm200/gr/sw_bundle_init.bin $out/lib/firmware/nvidia/gm204/gr/sw_bundle_init.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/gpccs_inst.bin)"
+     ln -sv ../../gm200/gr/gpccs_inst.bin $out/lib/firmware/nvidia/gm204/gr/gpccs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/gpccs_bl.bin)"
+     ln -sv ../../gm200/gr/gpccs_bl.bin $out/lib/firmware/nvidia/gm204/gr/gpccs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/fecs_inst.bin)"
+     ln -sv ../../gm200/gr/fecs_inst.bin $out/lib/firmware/nvidia/gm204/gr/fecs_inst.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/gr/fecs_bl.bin)"
+     ln -sv ../../gm200/gr/fecs_bl.bin $out/lib/firmware/nvidia/gm204/gr/fecs_bl.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/acr/ucode_unload.bin)"
+     ln -sv ../../gm200/acr/ucode_unload.bin $out/lib/firmware/nvidia/gm204/acr/ucode_unload.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/acr/ucode_load.bin)"
+     ln -sv ../../gm200/acr/ucode_load.bin $out/lib/firmware/nvidia/gm204/acr/ucode_load.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/gm204/acr/bl.bin)"
+     ln -sv ../../gm200/acr/bl.bin $out/lib/firmware/nvidia/gm204/acr/bl.bin
 
      runHook postInstall
   '';
@@ -5268,6 +5624,8 @@ stdenv.mkDerivation {
      install -Dm 644 qat_895xcc_mmp.bin $out/lib/firmware/qat_895xcc_mmp.bin
      install -Dm 644 qat_895xcc.bin $out/lib/firmware/qat_895xcc.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/qat_mmp.bin)"
+     ln -sv qat_895xcc_mmp.bin $out/lib/firmware/qat_mmp.bin
 
      runHook postInstall
   '';
@@ -6304,6 +6662,8 @@ stdenv.mkDerivation {
      mkdir -p $out/lib/firmware
 
 
+     mkdir -p "$(dirname $out/lib/firmware/rt3090.bin)"
+     ln -sv rt2860.bin $out/lib/firmware/rt3090.bin
 
      runHook postInstall
   '';
@@ -6342,6 +6702,8 @@ stdenv.mkDerivation {
 
      install -Dm 644 rt3071.bin $out/lib/firmware/rt3071.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/rt3070.bin)"
+     ln -sv rt2870.bin $out/lib/firmware/rt3070.bin
 
      runHook postInstall
   '';
@@ -7561,6 +7923,16 @@ stdenv.mkDerivation {
      install -Dm 644 intel/dsp_fw_release_v3402.bin $out/lib/firmware/intel/dsp_fw_release_v3402.bin
      install -Dm 644 intel/dsp_fw_release_v969.bin $out/lib/firmware/intel/dsp_fw_release_v969.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/intel/dsp_fw_cnl.bin)"
+     ln -sv dsp_fw_cnl_v1858.bin $out/lib/firmware/intel/dsp_fw_cnl.bin
+     mkdir -p "$(dirname $out/lib/firmware/intel/dsp_fw_glk.bin)"
+     ln -sv dsp_fw_glk_v3366.bin $out/lib/firmware/intel/dsp_fw_glk.bin
+     mkdir -p "$(dirname $out/lib/firmware/intel/dsp_fw_kbl.bin)"
+     ln -sv dsp_fw_kbl_v3402.bin $out/lib/firmware/intel/dsp_fw_kbl.bin
+     mkdir -p "$(dirname $out/lib/firmware/intel/dsp_fw_bxtn.bin)"
+     ln -sv dsp_fw_bxtn_v3366.bin $out/lib/firmware/intel/dsp_fw_bxtn.bin
+     mkdir -p "$(dirname $out/lib/firmware/intel/dsp_fw_release.bin)"
+     ln -sv dsp_fw_release_v3402.bin $out/lib/firmware/intel/dsp_fw_release.bin
 
      runHook postInstall
   '';
@@ -7875,6 +8247,12 @@ stdenv.mkDerivation {
      install -Dm 644 nvidia/tegra210/vic04_ucode.bin $out/lib/firmware/nvidia/tegra210/vic04_ucode.bin
      install -Dm 644 nvidia/tegra124/vic03_ucode.bin $out/lib/firmware/nvidia/tegra124/vic03_ucode.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tegra186/vic.bin)"
+     ln -sv vic04_ucode.bin $out/lib/firmware/nvidia/tegra186/vic.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tegra210/vic.bin)"
+     ln -sv vic04_ucode.bin $out/lib/firmware/nvidia/tegra210/vic.bin
+     mkdir -p "$(dirname $out/lib/firmware/nvidia/tegra124/vic.bin)"
+     ln -sv vic03_ucode.bin $out/lib/firmware/nvidia/tegra124/vic.bin
 
      runHook postInstall
   '';
@@ -8610,6 +8988,10 @@ stdenv.mkDerivation {
      install -Dm 644 ti-connectivity/wl1271-fw-2.bin $out/lib/firmware/ti-connectivity/wl1271-fw-2.bin
      install -Dm 644 ti-connectivity/wl1271-fw.bin $out/lib/firmware/ti-connectivity/wl1271-fw.bin
 
+     mkdir -p "$(dirname $out/lib/firmware/ti-connectivity/wl1271-nvs.bin)"
+     ln -sv wl127x-nvs.bin $out/lib/firmware/ti-connectivity/wl1271-nvs.bin
+     mkdir -p "$(dirname $out/lib/firmware/ti-connectivity/wl12xx-nvs.bin)"
+     ln -sv wl127x-nvs.bin $out/lib/firmware/ti-connectivity/wl12xx-nvs.bin
 
      runHook postInstall
   '';
